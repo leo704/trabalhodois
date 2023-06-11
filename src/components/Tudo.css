@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.imgQuadrada {
+  width: 20vw;
+  height: 20vw;
+  object-fit: contain;
+  background-color: #984646;
+  border-radius: 10px;
+}
+
+#menuHorizontal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+}
+#menuHorizontal ul {
+  list-style: none;
+  border-radius: 0px 0px 10px 10px;
+  width: 90vw;
+  background-color: #542c2bdf;
+  text-align: center;
+}
+#menuHorizontal ul li {
+  display: inline-block;
+}
+#menuHorizontal ul li a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: larger;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.5s;
+  border-radius: 8px;
+}
+#menuHorizontal ul li a:hover {
+  background-color: #261313;
+  opacity: 0.8;
+  border-radius: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: space-evenly;
+}
+#primeira {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-size: cover;
+  justify-content: left;
+}
+#primeiraContent {
+  display: flex;
+  z-index: 1;
+}
+
+#botaoAgendar {
+  background-color: #542c2bdf;
+  color: aliceblue;
+  border: 1px solid #261313;
+  padding: 2vh 2vw;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+#nome {
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  align-items: center;
+  text-align: center;
+}
+
+#nomeRose {
+  font-size: 3rem;
+  line-height: 1rem;
+}
+
+#logoMarrom {
+  width: 100px;
+  height: 100px;
+}
+
+#agende {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+#sobreNos {
+  background-color: #542c2b;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
+}
+
+.bordaBranca {
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 15px;
+  width: 70vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#sobreNosContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#sobreNosContent p {
+  width: 40vw;
+}
+
+#frame2 {
+  width: 100vw;
+  height: fit-content;
+  background-image: url("../assets//img/padrao.jpg");
+  background-size: 50px;
+  display: flex;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+#frame2Content {
+  display: flex;
+  flex-direction: row;
+  justify-content:  end;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  background-color: #542c2b;
+  color: aliceblue;
+  width: fit-content;
+  display: flex;
+  padding: 20px 20px 20px 30px;
+}
+
+#frame2Content p {
+  width: 40vw;
+  font-size: x-large;
+}
+
+#aspas {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100px;
+  padding: 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+#fotosSobreNos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  /* margin-bottom: 7vh; */
+}
+
+#fotosSobreNos img {
+  width: 60vw;
+  height: auto;
+
+  margin: 10px;
+  border: 1px black solid;
+}
+
+#primeira {
+  width: 100%;
+  height: 422px;
+  background-image: url("../assets/img/fotoCarrossel.jpg");
+  background-repeat: repeat-x;
+  animation: slide 60s linear infinite;
+}
+#sombraLateral {
+  position: absolute;
+  height: inherit;
+  z-index: 0;
+  width: 100%;
+}
+
+#final {
+  background-color: #f4e8c8;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+#final a {
+  text-decoration: none;
+  color: #261313;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.slider {
+  width: 100%;
+  height: 200px; /* Ajuste a altura conforme necessário */
+  background-image: url("../assets/img/fotoCarrossel.jpg");
+  background-repeat: repeat-x;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Celular */
+@media (max-width: 750px) {
+  #nome h1 {
+    line-height: 0.8;
+    font-size: 40px;
+  }
+  #nome h2 {
+    line-height: 1;
+    font-size: 20px;
+  }
+  #menuHorizontal ul li a {
+    font-size: 20px;
+  }
+
+  #botaoAgendar {
+    margin-right: 7px;
+  }
+
+  #sobreNosContent p {
+    width: 75vw;
+    height: fit-content;
+  }
+
+  #frame2Content {
+    padding: 20px 20px 20px 20px;
+  }
+
+  #frame2Content p {
+    font-size: medium;
+  }
+  .imgQuadrada {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  #fotosSobreNos img {
+    width: 80vw;
+  }
+}
+
+/* Tablet */
+@media (min-width: 751px) and (max-width: 1100px) {
+  #sobreNosContent p {
+    width: 63vw;
+  }
+  .imgQuadrada {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+/* Os dois */
+@media (max-width: 1100px) {
+  #sobreNosContent {
+    flex-direction: column;
+    line-height: 15px;
+  }
+  #primeira {
+    animation: slide 80s linear infinite;
+  }
+  #aspas {
+    font-size: 50px;
+    bottom: 30px;
+  }
+
+  #frame2Content{
+    width: fit-content;
+  }
+
+  #frame2Content p {
+    line-height: 18px;
+    width: 60vw;
+    font-size: large;
+  }
+
+  .bordaBranca {
+    width: 85vw;
+  }
+}

@@ -1,0 +1,16 @@
+#conteudoSize{
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4e8c8;
+}
+#Conteudo {
+  width: 100vw;
+  height: 30vh;
+  background-color: #542c2b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 60vh;
+ 
+}
