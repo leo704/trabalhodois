@@ -1,16 +1,35 @@
-#conteudoSize{
-  width: 100vw;
-  height: 100vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4e8c8;
+#souSection{
+  background-image: url('../assets/img/padrao.jpg');
+  background-size: 50px;
+  background-attachment: fixed;
 }
+
 #Conteudo {
-  width: 100vw;
-  height: 30vh;
+  margin-top: 15vh;
+  margin-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
   background-color: #542c2b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  height: 60vh;
- 
+}
+#caixaComentario{
+  padding: 10px;
+  margin: 20px 0 20px 0;
+  width: 80vw;
+  border: #f4e8c8 solid;
+  color: #f4e8c8;
+  font-size: large;
+}
+#Conteudo p{
+  color:aliceblue;
+  background-color: rgba(149, 223, 172, 0.311);
+}
+
+#notaComDes{
+  text-align: right;
+}
+#notaSemDes{
+  text-align: center;
 }

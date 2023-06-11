@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Tudo from "./components/Tudo";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
 import Menu from "./components/Menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Agendehorario from "./components/Agendehorario";
+import Feedback from "./components/Feedback";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +15,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Tudo />} />
       <Route path="Agende-horario" element={<Agendehorario />} />
-      <Route path="sobre" element={<Tudo />} />
+      <Route path="feedbacks" element={<Feedback/>} />
     </Routes>
   </BrowserRouter>
 );

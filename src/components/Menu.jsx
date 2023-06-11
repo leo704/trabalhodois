@@ -15,7 +15,7 @@ export default function Menu() {
               <Link to="/Agende-horario">Agendar Horario</Link>
             </li>
             <li>
-              <Link to="/">Feedback</Link>
+              <Link to="/feedbacks">Feedbacks</Link>
             </li>
           </ul>
         </nav>

@@ -3,7 +3,7 @@ import "./Agendehorario.css";
 
 export default function Agendehorario() {
   return (
-    <div id='geral'>
+    <div>
         <section>
         <div id="conteudoSize">
           <div id='Conteudo'>
