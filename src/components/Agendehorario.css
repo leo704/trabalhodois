@@ -1,9 +1,11 @@
-#souSection{
-  background-image: url('../assets/img/padrao.jpg');
+/*body*/
+#souSection {
+  background-image: url("../assets/img/padrao.jpg");
   background-size: 50px;
   background-attachment: fixed;
 }
 
+/*faixa marrom*/
 #Conteudo {
   margin-top: 15vh;
   margin-bottom: 8vh;
@@ -13,23 +15,63 @@
   height: fit-content;
   background-color: #542c2b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
 }
-#caixaComentario{
+
+/*cada item*/
+#caixaComentario {
   padding: 10px;
-  margin: 20px 0 20px 0;
+  margin: 10px 0;
   width: 80vw;
   border: #f4e8c8 solid;
   color: #f4e8c8;
-  font-size: large;
+
 }
-#Conteudo p{
-  color:aliceblue;
+#Conteudo p {
+  padding: 5px;
+  font-size: large;
+  color: aliceblue;
   background-color: rgba(149, 223, 172, 0.311);
+  border-radius: 10px;
 }
 
-#notaComDes{
+#notaComDes {
   text-align: right;
+  width: fit-content;
+  margin-left: auto;
 }
-#notaSemDes{
+#notaSemDes {
   text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#feedbackIterativo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#estrelaImg{
+  width: 3%;
+  height: auto;
+}
+
+/*Medias query*/
+
+/* Celular */
+@media (max-width: 750px) {}
+
+/* Tablet */
+@media (min-width: 751px) and (max-width: 1100px) {}
+
+/* Os dois */
+@media (max-width: 1100px) {
+  #estrelaImg{
+    width: 5%;
+    height: auto;
+  }
 }
