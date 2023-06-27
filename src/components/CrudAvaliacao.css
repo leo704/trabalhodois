@@ -1,0 +1,26 @@
+#limite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infos{
+    margin-top: 15vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+#resultados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p-menor{
+font-size: small;
+}

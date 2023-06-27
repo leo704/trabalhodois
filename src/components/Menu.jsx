@@ -17,6 +17,9 @@ export default function Menu() {
             <li>
               <Link to="/feedbacks">Feedbacks</Link>
             </li>
+            <li>
+              <Link to="/editar">Editar</Link>
+            </li>
           </ul>
         </nav>
       </header>
