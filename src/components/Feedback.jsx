@@ -23,7 +23,7 @@ export default function Feedback() {
           {semDescricao.map((item) => {
             return (
               <div id='feedbackIterativo'>
-                <img id="estrelaImg" src={estrela} alt="asdw" />
+                <img className="estrelaImg" src={estrela} alt="Estrela de destaque" />
                 <div key={item.id} id="caixaComentario">
                   <p>
                     {item.nome} • {item.procedimento}
@@ -33,7 +33,7 @@ export default function Feedback() {
                   </p>
                   <p id="notaComDes">nota: {item.nota}</p>
                 </div>
-                <img id="estrelaImg" src={estrela} alt="asdw" />
+                <img className="estrelaImg" src={estrela} alt="asdw" />
               </div>
             );
           })}

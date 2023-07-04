@@ -8,12 +8,12 @@ export default function Agendehorario() {
       <section>
           <div id="Conteudo">
             <div className='blocoRedeSocial'>
-                <img src={imgInsta} alt="Logo instagram"/>
-                <a href="https://www.instagram.com/rosemartins.espacobeleza/"><button>Visite nossa página</button></a>
+                <img className='conteudoImg' src={imgInsta} alt="Logo instagram"/>
+                <a href="https://www.instagram.com/rosemartins.espacobeleza/" target="_blank" rel="noopener noreferrer"><button>Visite nossa página</button></a>
             </div>
             <div className="blocoRedeSocial">
-                <img src={imgWpp} alt="Logo WhatsApp"/>
-                <a href="https://wa.me/5531989773190"><button>Agende um horário</button></a>
+                <img className='conteudoImg' src={imgWpp} alt="Logo WhatsApp"/>
+                <a href="https://wa.me/5531989773190" target="_blank" rel="noopener noreferrer"><button>Agende um horário</button></a>
             </div>
             <h5>Rua 123, nº 45 / Itabira-MG </h5>
           </div>

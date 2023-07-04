@@ -4,6 +4,8 @@ import imgEdit from "../assets/img/edit.png";
 import imgAdd from "../assets/img/add.png";
 import axios from "axios";
 import "./CrudAvaliacao.css";
+import imgBD from '../assets/img/criacaoBD.jpg'
+
 
 export default function CrudAvaliacao() {
   const [avaliacao, setAvaliacao] = useState([]);
@@ -124,6 +126,8 @@ export default function CrudAvaliacao() {
       }
       limparDados("");
       setDivVisivel(false);
+      window.alert('Ação concluída');
+      window.location.reload();
     } else {
       window.alert("Preencha os campos");
     }
@@ -246,6 +250,7 @@ export default function CrudAvaliacao() {
               );
             })
           : false}
+          <img src={imgBD} alt="Criação do banco de dados" width="300" height="200"/>
       </div>
     </div>
   );
