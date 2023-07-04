@@ -3,7 +3,8 @@ import "./Tudo.css";
 import { Link } from "react-router-dom";
 import logoMarrom from "../assets/img/logoMarrom.png";
 import sombraLateral from "../assets/img/sombraLateral.png";
-import fotoExem1 from "../assets/img/fotoexem1.jpg";
+import fotoGenerica from "../assets/img/salaoGenerico.jpg";
+import fotoGenerica2 from "../assets/img/salaoGenerico2.jpg";
 
 export default function Tudo() {
   return (
@@ -45,25 +46,34 @@ export default function Tudo() {
               Em nosso salão de beleza especializado em cachos, oferecemos uma
               variedade de serviços projetados para cuidar e realçar a beleza
               natural dos seus cachos. Aqui estão alguns dos serviços que temos
-              disponíveis: <br/><br/><b>1.</b> Corte especializado para cachos: Nossos estilistas
+              disponíveis: <br />
+              <br />
+              <b>1.</b> Corte especializado para cachos: Nossos estilistas
               experientes são especialistas em cortes que valorizam a textura e
-              forma dos seus cachos, criando um visual moderno e harmonioso. <br/><br/><b>2.</b>
+              forma dos seus cachos, criando um visual moderno e harmonioso.{" "}
+              <br />
+              <br />
+              <b>2.</b>
               Hidratação profunda: Proporcionamos tratamentos de hidratação
               intensa para seus cachos, restaurando a vitalidade, suavidade e
               brilho dos fios. Usamos produtos específicos para nutrir
-              profundamente e manter seus cachos hidratados e saudáveis. <br/><br/><b>3.</b>
+              profundamente e manter seus cachos hidratados e saudáveis. <br />
+              <br />
+              <b>3.</b>
               Definição de cachos: Através de técnicas especializadas, nossos
               profissionais são capazes de definir seus cachos de maneira
               natural e duradoura. Você sairá do salão com cachos definidos,
-              soltos e cheios de vida. <br/><br/><b>4.</b> Coloração para cachos: Se você deseja
-              adicionar um toque de cor aos seus cachos, oferecemos serviços de
-              coloração personalizados para realçar sua beleza natural. Nossos
-              estilistas irão ajudá-lo a escolher a tonalidade perfeita que
-              complemente seus cachos.
+              soltos e cheios de vida. <br />
+              <br />
+              <b>4.</b> Coloração para cachos: Se você deseja adicionar um toque
+              de cor aos seus cachos, oferecemos serviços de coloração
+              personalizados para realçar sua beleza natural. Nossos estilistas
+              irão ajudá-lo a escolher a tonalidade perfeita que complemente
+              seus cachos.
             </p>
           </div>
           <div id="imgSobreNos">
-            <img src={fotoExem1} className="imgQuadrada" alt="Imagem 1" />
+            <img src={fotoGenerica2} className="imgQuadrada" alt="Imagem 1" />
           </div>
         </div>
 
@@ -71,16 +81,17 @@ export default function Tudo() {
           <div id="frame2Content" className="bordaBranca">
             <h2 id="aspas">"</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur quibusdam autem, magnam ab nesciunt est minima
-              delectus vero minus quod quos nam assumenda voluptatibus unde
-              sunt? Dolore eum cumque consectetur!
+              Aqui, valorizamos a individualidade e reconhecemos que cada cacho
+              tem sua própria história. Nossos talentosos estilistas não apenas
+              dominam as técnicas mais avançadas para cuidar e realçar seus
+              cachos, mas também estão aqui para ouvir suas necessidades e
+              desejos.
             </p>
           </div>
         </div>
 
         <div id="fotosSobreNos" className="bordaBranca">
-          <img src={fotoExem1} alt="Imagem 1" />
+          <img src={fotoGenerica} alt="Imagem 1" />
           {/* <img src={fotoExem2} alt="Imagem 2" /> */}
           {/* <img src={fotoExem3} alt="Imagem 3" /> */}
         </div>
