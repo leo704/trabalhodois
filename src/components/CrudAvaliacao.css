@@ -1,26 +1,45 @@
-#limite{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#limite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#infos{
-    margin-top: 15vh;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    background-color: antiquewhite;
-    padding: 10px;
-    border-radius: 15px;
-
+#infos {
+  margin-top: 15vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-#resultados{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#resultados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.p-menor{
-font-size: small;
+.p-menor {
+  font-size: small;
+}
+
+#divVisivelInputs{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 217, 181);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#divVisivelBotao{
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+#divVisivelBotao button{
+  background-color: white;
+  color:black;
+  padding: 5px;
+  border-radius: 5px;
 }

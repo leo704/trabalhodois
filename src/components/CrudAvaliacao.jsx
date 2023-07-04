@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import imgDelete from "../assets/img/delete.ico";
-import imgEdit from "../assets/img/edit.ico";
+import imgDelete from "../assets/img/delete.png";
+import imgEdit from "../assets/img/edit.png";
+import imgAdd from "../assets/img/add.png";
 import axios from "axios";
 import "./CrudAvaliacao.css";
 
@@ -98,7 +99,7 @@ export default function CrudAvaliacao() {
 
   //Será usado ao clicar no botão GRAVAR
   function gravarDados() {
-    if (nome !== "" && procedimento !== "" && nota!=="") {
+    if (nome !== "" && procedimento !== "" && nota !== "") {
       if (tipo === "novo") {
         axios
           .post(url + "avaliacao", {
@@ -123,11 +124,9 @@ export default function CrudAvaliacao() {
       }
       limparDados("");
       setDivVisivel(false);
-     
     } else {
       window.alert("Preencha os campos");
     }
-    
   }
 
   function imprimeDescricao(item) {
@@ -145,67 +144,78 @@ export default function CrudAvaliacao() {
   return (
     <div id="limite">
       <div id="infos">
-        <button type="button" onClick={novosDados}>
-          Novo
-        </button>
+        {/* <button type="button" onClick={novosDados}>Novo</button> */}
+        <img
+          alt="Novo registro"
+          src={imgAdd}
+          height={40}
+          width={40}
+          onClick={(e) => novosDados()}
+        />
         {divVisivel && (
           <div>
-            <input
-              placeholder="Nome"
-              type="text"
-              name="txtNome"
-              required
-              value={nome}
-              onChange={(e) => {
-                setNome(e.target.value);
-              }}
-            />
-            <input
-              placeholder="Procedimento"
-              type="text"
-              name="txtProcedimento"
-              value={procedimento}
-              onChange={(e) => {
-                setProcedimento(e.target.value);
-              }}
-            />
-            <select
-              value={nota}
-              onChange={(e) => {
-                setNota(e.target.value);
-              }}
-              name="txtNota"
-            >
-              <option value="">Nota</option>
-              <option value="10">10</option>
-              <option value="9">9</option>
-              <option value="8">8</option>
-              <option value="7">7</option>
-              <option value="6">6</option>
-              <option value="5">5</option>
-              <option value="4">4</option>
-              <option value="3">3</option>
-              <option value="2">2</option>
-              <option value="1">1</option> 
-            </select>
-            <input
-              placeholder="Descrição"
-              type="text"
-              name="txtDescricao"
-              value={descricao}
-              onChange={(e) => {
-                setDescricao(e.target.value);
-              }}
-            />
+            <div id="divVisivelInputs">
+              <input
+                placeholder="Nome*"
+                type="text"
+                name="txtNome"
+                required
+                value={nome}
+                onChange={(e) => {
+                  setNome(e.target.value);
+                }}
+              />
+              <div id="procedimentoNota">
+                <input
+                  placeholder="Procedimento*"
+                  type="text"
+                  name="txtProcedimento"
+                  value={procedimento}
+                  onChange={(e) => {
+                    setProcedimento(e.target.value);
+                  }}
+                />
+                <select
+                  value={nota}
+                  onChange={(e) => {
+                    setNota(e.target.value);
+                  }}
+                  name="txtNota"
+                >
+                  <option value="">Nota*</option>
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+              <input
+                placeholder="Descrição (opcional)"
+                type="text"
+                name="txtDescricao"
+                value={descricao}
+                onChange={(e) => {
+                  setDescricao(e.target.value);
+                }}
+              />
+            <div id="divVisivelBotao">
+              <button type="button" onClick={limparDados}>
+                Cancelar
+              </button>
+              <button type="button" onClick={gravarDados}>
+                Salvar
+              </button>
+            </div>
+            </div>
           </div>
         )}
 
-        <button type="button" onClick={limparDados}>
-          Cancelar
-        </button>
-        <button type="button" onClick={gravarDados}>
-          Salvar
-        </button>
         {avaliacao
           ? avaliacao.map((item) => {
               return (

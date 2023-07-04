@@ -16,6 +16,21 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 30px 0;
 }
+#Conteudo img{
+  width: 10vh;
+  height: 10vh;
+}
+#Conteudo h5{
+  color: white;
+}
+.blocoRedeSocial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 30vw;
+  margin-bottom: 5px;
+}
 
 /*cada item*/
 #caixaComentario {
@@ -62,7 +77,12 @@ body{
 /*Medias query*/
 
 /* Celular */
-@media (max-width: 750px) {}
+@media (max-width: 750px) {
+  #Conteudo {
+    margin: 8vh 10px;
+    border-radius: 10px;
+  }
+}
 
 /* Tablet */
 @media (min-width: 751px) and (max-width: 1100px) {}

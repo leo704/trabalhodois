@@ -239,10 +239,15 @@ section {
     line-height: 1;
     font-size: 20px;
   }
+  #menuHorizontal ul{
+    width: auto;
+    border-radius: 0;
+  }
   #menuHorizontal ul li a {
     font-size: 20px;
-  }
-
+    font-size: large;
+     padding: 10px;
+}
   #botaoAgendar {
     margin-right: 7px;
   }
